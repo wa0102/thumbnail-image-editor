@@ -1,0 +1,4 @@
+rembg
+mediapipe
+numpy
+Pillow

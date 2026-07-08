@@ -1,0 +1,61 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+.form-floating > .form-control-plaintext::placeholder, .form-floating > .form-control::placeholder {
+  color: var(--bs-secondary-color);
+  text-align: end;
+}
+
+.form-floating > .form-control-plaintext:focus::placeholder, .form-floating > .form-control:focus::placeholder {
+  text-align: start;
+}
+
+@font-face{
+    font-family: "k-font";
+    src: url("/fonts/k-font/keifont.ttf") format("truetype");
+}
+
+.k-font{
+    font-family: "k-font", sans-serif;
+}
+
+#background {
+    width: 1280px;
+    height: 720px;
+    background-color: lightblue; /* ”wŒiF‚Ì—á */
+    background-image: url('background.jpg'); /* ”wŒi‰æ‘œ‚à‰Â */
+    background-size: cover;
+    position: relative; /* ’†‚Ì img ‚ğâ‘ÎˆÊ’u‚É‚Å‚«‚é‚æ‚¤‚É‚·‚é */
+    overflow: hidden;
+    border: 1px solid #ccc;
+}
+
+#foreground {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    cursor: grab; /* ƒhƒ‰ƒbƒO‚Å‚«‚éˆó */
+    width: 200px; /* ‰ŠúƒTƒCƒY */
+    user-select: none; /* •¶š‘I‘ğ–h~ */
+    transition: transform 0.1s; /* Šg‘åk¬‚ÌŠŠ‚ç‚©‚³ */
+}
