@@ -1,4 +1,0 @@
-rembg
-mediapipe
-numpy
-Pillow
